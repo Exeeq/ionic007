@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio de sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <ion-card-header>
+      <ion-card-title class="centrado2">Ingreso a nbapp</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-input type="email" label="Usuario" labelPlacement="stacked" placeholder="Ingrese usuario"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content>
+      <ion-item>
+        <ion-input type="password" label="Contraseña" labelPlacement="stacked" placeholder="Ingrese contraseña" ></ion-input>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-button class="centrado2" (click)="login()" color="danger" size="large">INGRESAR</ion-button>
+    <br><br>
+    <ion-button class="centrado2" (click)="register()" color="medium" size="small">REGISTRARSE</ion-button>
+  </ion-card>
+</ion-content>
