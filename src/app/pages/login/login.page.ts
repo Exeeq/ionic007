@@ -14,7 +14,7 @@ export class LoginPage implements OnInit {
   }
   
   login(){
-    this.router.navigate(['jugadores']);
+    this.router.navigate(['home']);
   }
 
   register(){
