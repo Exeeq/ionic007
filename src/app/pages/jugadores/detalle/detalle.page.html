@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <img src="{{ jugador.imagen }}" alt="">
+      <ion-card-title>{{ jugador.nombre }}</ion-card-title>
+      <ion-card-subtitle>{{ jugador.fecha }}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{ jugador.descripcion }}
+    </ion-card-content>
+  
+    
+  </ion-card>
+
+</ion-content>

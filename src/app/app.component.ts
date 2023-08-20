@@ -11,7 +11,7 @@ export class AppComponent {
     { title: 'Equipos', url: 'equipos', icon: 'people' },
     { title: 'Estadisticas', url: 'archived', icon: 'analytics' },
     { title: 'Campeon', url: 'trash', icon: 'medal' },
-    { title: 'Fichaje', url: 'spam', icon: 'person-add' },
+    { title: 'Cerrar sesión', url: 'login', icon: 'log-out' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}

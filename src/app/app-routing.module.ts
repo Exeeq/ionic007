@@ -13,7 +13,16 @@ const routes: Routes = [
   },
   {
     path: 'jugadores',
-    loadChildren: () => import('./pages/jugadores/jugadores.module').then( m => m.JugadoresPageModule)
+    children: [
+      {
+        path: "",
+        loadChildren: () => import('./pages/jugadores/jugadores.module').then( m => m.JugadoresPageModule)
+      },
+      {
+        path: ':id',
+        loadChildren: () => import('./pages/jugadores/detalle/detalle.module').then( m => m.DetallePageModule)
+      }
+    ]
   },
   {
     path: 'equipos',
@@ -30,15 +39,11 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
-  },  {
+  },
+  {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
-  {
-    path: 'detalle',
-    loadChildren: () => import('./pages/detalle/detalle.module').then( m => m.DetallePageModule)
-  }
-
 
 ];
 
