@@ -44,6 +44,12 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'agregar',
+    loadChildren: () => import('./pages/jugadores/agregar/agregar.module').then( m => m.AgregarPageModule)
+  },
+
+
 
 ];
 
